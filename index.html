@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <!-- Links to fonts  -->
+    <!-- Link to fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -448,8 +448,51 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <p>Leave your contacts and we will call you back</p>
+        <form name="modal_form">
+          <label for="modal_name">Name</label>
+          <div>
+            <input class="" type="text" name="modal_name" id="modal_name" />
+            <svg class="" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label for="modal_phone">Phone</label>
+          <div>
+            <input class="" type="text" name="modal_phone" id="modal_phone" />
+            <svg class="" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label for="modal_email">Email</label>
+          <div>
+            <input class="" type="text" name="modal_email" id="modal_email" />
+            <svg class="" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label for="modal_comment">Comment</label>
+          <textarea
+            name="modal_comment"
+            id="modal_comment"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+
+          <label>
+            <input type="checkbox" name="modal_agreement" />
+            <span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
+    <!-- JS -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
